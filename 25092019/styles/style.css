@@ -1,0 +1,70 @@
+/* Estilos gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.titulo {
+  font-size: 50px;
+  letter-spacing: -1px;
+  line-height: 34px;
+  padding: 130px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 130px;
+  border-bottom: 1px solid #D6D6D6;
+  cursor: pointer;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+ul li:hover {
+  background-color: rgba(255, 51, 0, 1);
+}
+
+ul li .designer-info p {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+ul li:hover .designer-info p {
+  color: white;
+}
+
+ul li .designer-info p:last-child {
+  font-size: 20px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+ul li .designer-image {
+  width: 220px;
+  height: 220px;
+}
+
+ul li .designer-image.alexandre {
+  background: url("../images/alexandre.png") no-repeat;
+  background-size: cover;
+}
+
+ul li:hover .designer-image {
+  border-radius: 100%;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.2);
+}

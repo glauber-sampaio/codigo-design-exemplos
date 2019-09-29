@@ -1,0 +1,222 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Site info */
+.site-info {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  position: sticky;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 130px;
+}
+
+.site-info .logo {
+  margin-top: 130px;
+}
+
+.site-info .links {
+  padding-bottom: 130px;
+}
+
+.site-info .logo h1 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
+
+.site-info .logo h1 span {
+  color: #FF9900;
+  font-style: italic;
+}
+
+.site-info .links a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+
+
+
+/* Galeria */
+.galeria {
+  width: 60%;
+}
+
+.galeria .galeria-rows:hover .row .item {
+  opacity: 0.2;
+}
+
+.galeria .hero {
+  width: 100%;
+  height: 90vh;
+  background: url(../images/piet.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.galeria .hero .artista-info {
+  width: 220px;
+  height: 220px;
+  background: #E04934;
+}
+
+.galeria .hero .artista-info p {
+  color: white;
+  padding: 30px;
+}
+
+
+.galeria .row {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding-right: 130px;
+}
+
+.galeria .row .item {
+  cursor: url(../images/cursor-red.png), auto;
+  transition: 0.2s opacity ease-out;
+  margin-right: 30px;
+}
+
+.galeria:hover .row .item:hover {
+  opacity: 1 !important;
+}
+
+.galeria .row .item .imagem {
+  width: 220px;
+  height: 220px;
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.galeria .row .item .imagem .country {
+  font-size: 15px;
+  color: white;
+  background: #FF9900;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 50px;
+  transform: translateY(12px);
+}
+
+.galeria .row .item .imagem img {
+  width: auto;
+  height: 100%;
+}
+
+.galeria .row .item .info {
+  margin-top: 20px;
+}
+
+.galeria .row .item .info p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.galeria .row .item:hover .info p:first-child {
+  display: none;
+}
+
+.galeria .row .item .info p:last-child {
+  display: none;
+}
+
+.galeria .row .item:hover .info p:last-child {
+  display: block;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 1024px) {
+
+  .container {
+    flex-direction: column;
+    padding: 0 60px;
+  }
+
+  .container .site-info {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+  }
+
+  .container .site-info .logo {
+    margin-top: 80px;
+  }
+
+  .container .site-info .logo h1 br {
+    display: none;
+  }
+
+  .site-info .links {
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .site-info .links a {
+    display: inline-block;
+  }
+
+  .site-info .links a:after {
+    content: "/";
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .site-info .links a:last-child:after {
+    content: "";
+  }
+
+  .galeria {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .galeria .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria .row .item {
+    margin-bottom: 30px;
+  }
+
+  .galeria .row .item .imagem {
+    background-position: bottom center;
+    justify-content: center;
+  }
+
+  .galeria .row .item .info p {
+    text-align: center;
+  }
+
+}

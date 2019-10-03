@@ -1,0 +1,30 @@
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 90px;
+  letter-spacing: -3px;
+}
+
+h1 span {
+  font-style: italic;
+}
+
+h4 {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  letter-spacing: -0.3px;
+}
+
+.big-title {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 65vw;
+  letter-spacing: -3.5vw;
+  color: #FFE600;
+}

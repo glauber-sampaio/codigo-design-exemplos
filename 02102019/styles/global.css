@@ -50,3 +50,82 @@ body {
   top: 45vh;
   left: 50vw;
 }
+
+
+
+
+/* Modal */
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  justify-content: flex-end;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal .modal__conteudo {
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bangladesh.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px;
+  color: white;
+}
+
+.modal .modal__conteudo div[id^="conteudo-"] {
+  display: none;
+}
+
+.modal .modal__conteudo div[id^="conteudo-"].show {
+  display: block;
+}
+
+
+.modal .modal__conteudo.bg-amazonia {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/amazonia.png) no-repeat;
+  background-size: cover;
+}
+
+.modal .modal__conteudo.bg-bangladesh {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bangladesh.png) no-repeat;
+  background-size: cover;
+}
+
+.modal .modal__conteudo.bg-cabofrio {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/cabo-frio.png) no-repeat;
+  background-size: cover;
+}
+
+.modal .modal__conteudo.bg-dublin {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/dublin.png) no-repeat;
+  background-size: cover;
+}
+
+
+.modal .modal__conteudo h1 {
+  margin-bottom: 25px;
+}
+
+.modal .modal__conteudo p {
+  width: 50%;
+}
+
+.modal .modal__conteudo .botao-fechar {
+  position: absolute;
+  right: 120px;
+  cursor: pointer;
+}
+
+.modal .modal__conteudo .botao-fechar:hover {
+  opacity: 0.5;
+}
